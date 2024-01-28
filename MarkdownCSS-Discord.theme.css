@@ -1,0 +1,1353 @@
+/**
+ * @name Markdown.css Discord
+ * @author Harole
+ * @description It just makes formatting in Discord messages, unformatted. A stupid idea, but it works.
+ * @version 0.1
+ * @authorLink https://haroleethan.studio.site
+ * @source https://github.com/HaroleDev/markdowncss-discord
+ */
+
+#app-mount [class^=userInfoText] h1,
+#app-mount [class^=userInfoText] h2,
+#app-mount [class^=userInfoText] h3,
+#app-mount [class^=userInfoText] h4,
+#app-mount [class^=userInfoText] h5,
+#app-mount [class^=userInfoText] h6,
+#app-mount [class^=userInfoText] blockquote,
+#app-mount [class^=userInfoText] em,
+#app-mount [class^=userInfoText] strong,
+#app-mount [class^=userInfoText] u,
+#app-mount [class^=userInfoText] s,
+#app-mount [class^=userInfoText] code,
+#app-mount [class^=userInfoText] pre,
+#app-mount [class^=userInfoText] [class^=timestamp],
+#app-mount [class^=userInfoText] [class^=timestamp]>time,
+#app-mount [class^=userInfoText] [class^=timestamp]>time *,
+#app-mount [class^=markup] h1,
+#app-mount [class^=markup] h2,
+#app-mount [class^=markup] h3,
+#app-mount [class^=markup] h4,
+#app-mount [class^=markup] h5,
+#app-mount [class^=markup] h6,
+#app-mount [class^=markup] blockquote,
+#app-mount [class^=markup] em,
+#app-mount [class^=markup] strong,
+#app-mount [class^=markup] u,
+#app-mount [class^=markup] s,
+#app-mount [class^=markup] code,
+#app-mount [class^=markup] pre,
+#app-mount [class^=markup] [class^=timestamp],
+#app-mount [class^=markup] [class^=timestamp]>time,
+#app-mount [class^=markup] [class^=timestamp]>time *,
+#app-mount [class^=markup] [class^=syntax],
+#app-mount [class^=markup] [class^=underline],
+#app-mount [class^=markup] [class^=bold],
+#app-mount [class^=markup] [class^=italics],
+#app-mount [class^=markup] [class^=strikethrough],
+#app-mount [class^=markup] [class^=inlineCode],
+#app-mount [class^=markup] [class^=codeLine] {
+    font-weight: normal !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+    font-family: inherit !important;
+    color: var(--text-normal) !important;
+    line-height: 1.375em !important;
+}
+
+#app-mount [class^=markup] h1,
+#app-mount [class^=markup] h2,
+#app-mount [class^=markup] h3,
+#app-mount [class^=markup] h4,
+#app-mount [class^=markup] h5,
+#app-mount [class^=markup] h6,
+#app-mount [class^=markup] blockquote,
+#app-mount [class^=markup] em,
+#app-mount [class^=markup] strong,
+#app-mount [class^=markup] u,
+#app-mount [class^=markup] s,
+#app-mount [class^=markup] code,
+#app-mount [class^=markup] pre,
+#app-mount [class^=markup] [class^=timestamp],
+#app-mount [class^=markup] [class^=timestamp]>time,
+#app-mount [class^=markup] [class^=timestamp]>time *,
+#app-mount [class^=markup] [class^=syntax],
+#app-mount [class^=markup] [class^=underline],
+#app-mount [class^=markup] [class^=bold],
+#app-mount [class^=markup] [class^=italics],
+#app-mount [class^=markup] [class^=strikethrough],
+#app-mount [class^=markup] [class^=inlineCode],
+#app-mount [class^=markup] [class^=codeLine] {
+    font-size: 100% !important;
+}
+
+#app-mount [class^=markup] code,
+#app-mount [class^=markup] pre,
+#app-mount [class^=userInfoText] code,
+#app-mount [class^=userInfoText] pre {
+    font-family: inherit;
+    margin: 0;
+}
+
+#app-mount [class^=markup] h1,
+#app-mount [class^=markup] h2,
+#app-mount [class^=markup] h3,
+#app-mount [class^=markup] h4,
+#app-mount [class^=markup] h5,
+#app-mount [class^=markup] h6,
+#app-mount [class^=markup] blockquote,
+#app-mount [class^=markup] ol,
+#app-mount [class^=markup] ul,
+#app-mount [class^=markup] li,
+#app-mount [class^=markup] p,
+#app-mount [class^=markup] section,
+#app-mount [class^=markup] header,
+#app-mount [class^=markup] footer,
+#app-mount [class^=userInfoText] h1,
+#app-mount [class^=userInfoText] h2,
+#app-mount [class^=userInfoText] h3,
+#app-mount [class^=userInfoText] h4,
+#app-mount [class^=userInfoText] h5,
+#app-mount [class^=userInfoText] h6,
+#app-mount [class^=userInfoText] blockquote,
+#app-mount [class^=userInfoText] ol,
+#app-mount [class^=userInfoText] ul,
+#app-mount [class^=userInfoText] li,
+#app-mount [class^=userInfoText] p,
+#app-mount [class^=userInfoText] section,
+#app-mount [class^=userInfoText] header,
+#app-mount [class^=userInfoText] footer {
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+
+#app-mount [class^=markup] h1,
+#app-mount [class^=userInfoText] h1 {
+    position: relative;
+    display: inline-block;
+    display: table-cell;
+    margin: 0;
+    overflow: hidden;
+}
+
+#app-mount [class^=markup] h1+*,
+#app-mount [class^=userInfoText] h1+* {
+    margin-top: 0;
+}
+
+#app-mount [class^=markup] h2,
+#app-mount [class^=markup] h3,
+#app-mount [class^=markup] h4,
+#app-mount [class^=markup] h5,
+#app-mount [class^=markup] h6,
+#app-mount [class^=userInfoText] h2,
+#app-mount [class^=userInfoText] h3,
+#app-mount [class^=userInfoText] h4,
+#app-mount [class^=userInfoText] h5,
+#app-mount [class^=userInfoText] h6 {
+    position: relative;
+}
+
+#app-mount [class^=markup] h1:before,
+#app-mount [class^=markup] h2:before,
+#app-mount [class^=markup] h3:before,
+#app-mount [class^=markup] h4:before,
+#app-mount [class^=markup] h5:before,
+#app-mount [class^=markup] h6:before,
+#app-mount [class^=userInfoText] h1:before,
+#app-mount [class^=userInfoText] h2:before,
+#app-mount [class^=userInfoText] h3:before,
+#app-mount [class^=userInfoText] h4:before,
+#app-mount [class^=userInfoText] h5:before,
+#app-mount [class^=userInfoText] h6:before {
+    display: inline;
+}
+
+#app-mount [class^=markup] h1:before,
+#app-mount [class^=userInfoText] h1:before {
+    content: "# ";
+}
+
+#app-mount [class^=markup] h2:before,
+#app-mount [class^=userInfoText] h2:before {
+    content: "## ";
+}
+
+#app-mount [class^=markup] h3:before,
+#app-mount [class^=userInfoText] h3:before {
+    content: "### ";
+}
+
+#app-mount [class^=markup] h4:before,
+#app-mount [class^=userInfoText] h4:before {
+    content: "#### ";
+}
+
+#app-mount [class^=markup] h5:before,
+#app-mount [class^=userInfoText] h5:before {
+    content: "##### ";
+}
+
+#app-mount [class^=markup] h6:before,
+#app-mount [class^=userInfoText] h6:before {
+    content: "###### ";
+}
+
+#app-mount [class^=markup] li,
+#app-mount [class^=userInfoText] li {
+    position: relative;
+    display: block;
+    padding-left: 2ch;
+}
+
+#app-mount [class^=markup] li:after,
+#app-mount [class^=userInfoText] li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#app-mount [class^=markup] ul>li:after,
+#app-mount [class^=userInfoText] ul>li:after {
+    content: "-";
+}
+
+#app-mount [class^=markup] ol,
+#app-mount [class^=userInfoText] ol {
+    counter-reset: ol;
+}
+
+#app-mount [class^=markup] ol>li:after,
+#app-mount [class^=userInfoText] ol>li:after {
+    content: counter(ol) ".";
+    counter-increment: ol;
+}
+
+#app-mount [class^=markup] blockquote,
+#app-mount [class^=userInfoText] blockquote {
+    position: relative;
+    padding-left: 2ch;
+    overflow: hidden;
+}
+
+#app-mount [class^=markup] blockquote:after,
+#app-mount [class^=userInfoText] blockquote:after {
+    content: ">\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>\A>";
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#app-mount [class^=markup] [class^=blockquoteDivider],
+#app-mount [class^=userInfoText] [class^=blockquoteDivider] {
+    display: none;
+}
+
+#app-mount [class^=markup] strong:before,
+#app-mount [class^=markup] strong:after,
+#app-mount [class^=userInfoText] strong:before,
+#app-mount [class^=userInfoText] strong:after {
+    content: "**";
+    display: inline;
+}
+
+#app-mount [class^=markup] em:before,
+#app-mount [class^=markup] em:after,
+#app-mount [class^=userInfoText] em:before,
+#app-mount [class^=userInfoText] em:after {
+    content: "*";
+    display: inline;
+}
+
+#app-mount [class^=markup] u:before,
+#app-mount [class^=markup] u:after,
+#app-mount [class^=userInfoText] u:before,
+#app-mount [class^=userInfoText] u:after {
+    content: "__";
+    display: inline;
+}
+
+#app-mount [class^=markup] s:before,
+#app-mount [class^=markup] s:after,
+#app-mount [class^=userInfoText] s:before,
+#app-mount [class^=userInfoText] s:after {
+    content: "~~";
+    display: inline;
+}
+
+#app-mount [class^=markup] a,
+#app-mount [class^=userInfoText] a {
+    text-decoration: none;
+}
+
+#app-mount [class^=markup] a:before,
+#app-mount [class^=userInfoText] a:before {
+    content: "[";
+    display: inline;
+    color: var(--text-normal) !important;
+}
+
+#app-mount [class^=markup] a:after,
+#app-mount [class^=userInfoText] a:after {
+    content: "](" attr(href) ")";
+    display: inline;
+    color: var(--text-normal) !important;
+}
+
+#app-mount [class^=markup] a:after,
+#app-mount [class^=userInfoText] a:after {
+    content: "](" attr(href) ")";
+    display: inline;
+    color: var(--text-normal) !important;
+}
+
+#app-mount [class^=markup] code,
+#app-mount [class^=userInfoText] code {
+    font-weight: normal;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+#app-mount [class^=markup] code.hljs,
+#app-mount [class^=markup] code.hljs *,
+#app-mount [class^=userInfoText] code.hljs,
+#app-mount [class^=userInfoText] code.hljs * {
+    color: inherit;
+    font-weight: normal;
+    background-color: transparent;
+    line-height: inherit;
+    font-style: normal !important;
+}
+
+#app-mount [class^=markup] [class^=codeActions],
+#app-mount [class^=userInfoText] [class^=codeActions] {
+    display: none;
+}
+
+#app-mount [class^=markup] code:before,
+#app-mount [class^=markup] code:after,
+#app-mount [class^=userInfoText] code:before,
+#app-mount [class^=userInfoText] code:after {
+    content: "`";
+    display: inline;
+}
+
+#app-mount [class^=markup] pre code:before,
+#app-mount [class^=userInfoText] pre code:before {
+    content: "```\a";
+}
+
+#app-mount [class^=markup] pre code:after,
+#app-mount [class^=userInfoText] pre code:after {
+    content: "\a```";
+}
+
+#app-mount [class^=markup] pre code[class~=hljs]::before {
+    content: "```\a";
+}
+
+#app-mount [class^=markup] pre code[class~=1c i]::before {
+    content: "```1c\a";
+}
+
+#app-mount [class^=markup] pre code[class~=accesslog i]::before {
+    content: "```accesslog\a";
+}
+
+#app-mount [class^=markup] pre code[class~=abnf i]::before {
+    content: "```abnf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=as i]::before,
+#app-mount [class^=markup] pre code[class~=actionscript i]::before {
+    content: "```as\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ada i]::before {
+    content: "```ada\a";
+}
+
+#app-mount [class^=markup] pre code[class~=asc i]::before,
+#app-mount [class^=markup] pre code[class~=angelscript i]::before {
+    content: "```asc\a";
+}
+
+#app-mount [class^=markup] pre code[class~=apache i]::before,
+#app-mount [class^=markup] pre code[class~=apacheconf i]::before {
+    content: "```apache\a";
+}
+
+#app-mount [class^=markup] pre code[class~=applescript i]::before,
+#app-mount [class^=markup] pre code[class~=osascript i]::before {
+    content: "```applescript\a";
+}
+
+#app-mount [class^=markup] pre code[class~=arcade i]::before {
+    content: "```arcade\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ino i]::before,
+#app-mount [class^=markup] pre code[class~=arduino i]::before {
+    content: "```ino\a";
+}
+
+#app-mount [class^=markup] pre code[class~=arm i]::before,
+#app-mount [class^=markup] pre code[class~=armasm i]::before {
+    content: "```armasm\a";
+}
+
+#app-mount [class^=markup] pre code[class~=adoc i]::before,
+#app-mount [class^=markup] pre code[class~=asciidoc i]::before {
+    content: "```adoc\a";
+}
+
+#app-mount [class^=markup] pre code[class~=aspectj i]::before {
+    content: "```aspectj\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ahk i]::before,
+#app-mount [class^=markup] pre code[class~=autohotkey i]::before {
+    content: "```ahk\a";
+}
+
+#app-mount [class^=markup] pre code[class~=autoit i]::before {
+    content: "```autoit\a";
+}
+
+#app-mount [class^=markup] pre code[class~=avrasm i]::before {
+    content: "```avrasm\a";
+}
+
+#app-mount [class^=markup] pre code[class~=awk i]::before {
+    content: "```awk\a";
+}
+
+#app-mount [class^=markup] pre code[class~=x++i]::before,
+#app-mount [class^=markup] pre code[class~=axapta i]::before {
+    content: "```x++\a";
+}
+
+#app-mount [class^=markup] pre code[class~=sh i]::before,
+#app-mount [class^=markup] pre code[class~=bash i]::before {
+    content: "```sh\a";
+}
+
+#app-mount [class^=markup] pre code[class~=basic i]::before {
+    content: "```basic\a";
+}
+
+#app-mount [class^=markup] pre code[class~=bnf i]::before {
+    content: "```bnf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=bf i]::before,
+#app-mount [class^=markup] pre code[class~=brainfuck i]::before {
+    content: "```bf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cal i]::before {
+    content: "```cal\a";
+}
+
+#app-mount [class^=markup] pre code[class~=capnp i]::before,
+#app-mount [class^=markup] pre code[class~=capnproto i]::before {
+    content: "```capnp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ceylon i]::before {
+    content: "```ceylon\a";
+}
+
+#app-mount [class^=markup] pre code[class~=icl i]::before,
+#app-mount [class^=markup] pre code[class~=dcl i]::before,
+#app-mount [class^=markup] pre code[class~=clean i]::before {
+    content: "```clean\a";
+}
+
+#app-mount [class^=markup] pre code[class~=clj i]::before,
+#app-mount [class^=markup] pre code[class~=edn i]::before,
+#app-mount [class^=markup] pre code[class~=clojure i]::before {
+    content: "```clj\a";
+}
+
+#app-mount [class^=markup] pre code[class~=clojure-repl i]::before {
+    content: "```clojure-repl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cmake i]::before {
+    content: "```cmake\a";
+}
+
+#app-mount [class^=markup] pre code[class~=iced i]::before,
+#app-mount [class^=markup] pre code[class~=cson i]::before,
+#app-mount [class^=markup] pre code[class~=coffee i]::before,
+#app-mount [class^=markup] pre code[class~=coffeescript i]::before {
+    content: "```coffee\a";
+}
+
+#app-mount [class^=markup] pre code[class~=coq i]::before {
+    content: "```coq\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cos i]::before,
+#app-mount [class^=markup] pre code[class~=cls i]::before {
+    content: "```cos\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cxx i]::before,
+#app-mount [class^=markup] pre code[class~=hxx i]::before,
+#app-mount [class^=markup] pre code[class~=hh i]::before,
+#app-mount [class^=markup] pre code[class~=hpp i]::before,
+#app-mount [class^=markup] pre code[class~=h++i]::before,
+#app-mount [class^=markup] pre code[class~=c++i]::before,
+#app-mount [class^=markup] pre code[class~=cc i]::before,
+#app-mount [class^=markup] pre code[class~=cpp i]::before {
+    content: "```cpp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=pcmk i]::before,
+#app-mount [class^=markup] pre code[class~=crmsh i]::before,
+#app-mount [class^=markup] pre code[class~=crm i]::before {
+    content: "```crmsh\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cr i]::before,
+#app-mount [class^=markup] pre code[class~=crystal i]::before {
+    content: "```cr\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cs i]::before,
+#app-mount [class^=markup] pre code[class~=csharp i]::before {
+    content: "```cs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=csp i]::before {
+    content: "```csp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=css i]::before {
+    content: "```css\a";
+}
+
+#app-mount [class^=markup] pre code[class~=d i]::before {
+    content: "```d\a";
+}
+
+#app-mount [class^=markup] pre code[class~=dart i]::before {
+    content: "```dark\a";
+}
+
+#app-mount [class^=markup] pre code[class~=dfm i]::before,
+#app-mount [class^=markup] pre code[class~=dpr i]::before,
+#app-mount [class^=markup] pre code[class~=delphi i]::before {
+    content: "```delphi\a";
+}
+
+/* Similar highlighting but renamed for familiarity */
+#app-mount [class^=markup] pre code[class~=pas i]::before,
+#app-mount [class^=markup] pre code[class~=pascal i]::before {
+    content: "```pas\a";
+}
+
+#app-mount [class^=markup] pre code[class~=patch i]::before,
+#app-mount [class^=markup] pre code[class~=diff i]::before {
+    content: "```diff\a";
+}
+
+#app-mount [class^=markup] pre code[class~=jinja i]::before,
+#app-mount [class^=markup] pre code[class~=django i]::before {
+    content: "```django\a";
+}
+
+#app-mount [class^=markup] pre code[class~=zone i]::before,
+#app-mount [class^=markup] pre code[class~=bind i]::before,
+#app-mount [class^=markup] pre code[class~=dns i]::before {
+    content: "```dns\a";
+}
+
+#app-mount [class^=markup] pre code[class~=docker i]::before,
+#app-mount [class^=markup] pre code[class~=dockerfile i]::before {
+    content: "```dockerfile\a";
+}
+
+#app-mount [class^=markup] pre code[class~=dos i]::before,
+#app-mount [class^=markup] pre code[class~=bat i]::before,
+#app-mount [class^=markup] pre code[class~=cmd i]::before {
+    content: "```bat\a";
+}
+
+#app-mount [class^=markup] pre code[class~=dsconfig i]::before {
+    content: "```dsconfig\a";
+}
+
+#app-mount [class^=markup] pre code[class~=dts i]::before {
+    content: "```dts\a";
+}
+
+#app-mount [class^=markup] pre code[class~=dst i]::before,
+#app-mount [class^=markup] pre code[class~=dust i]::before {
+    content: "```dst\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ebnf i]::before {
+    content: "```ebnf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ex i]::before,
+#app-mount [class^=markup] pre code[class~=exs i]::before,
+#app-mount [class^=markup] pre code[class~=elixir i]::before {
+    content: "```exs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=elm i]::before {
+    content: "```elm\a";
+}
+
+#app-mount [class^=markup] pre code[class~=erb i]::before {
+    content: "```erb\a";
+}
+
+#app-mount [class^=markup] pre code[class~=erl i]::before,
+#app-mount [class^=markup] pre code[class~=erlang i]::before {
+    content: "```erl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=erlang-repl i]::before {
+    content: "```erlang-repl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=xls i]::before,
+#app-mount [class^=markup] pre code[class~=xlsx i]::before,
+#app-mount [class^=markup] pre code[class~=excel i]::before {
+    content: "```excel\a";
+}
+
+#app-mount [class^=markup] pre code[class~=fix i]::before {
+    content: "```fix\a";
+}
+
+#app-mount [class^=markup] pre code[class~=flix i]::before {
+    content: "```flix\a";
+}
+
+#app-mount [class^=markup] pre code[class~=f90 i]::before,
+#app-mount [class^=markup] pre code[class~=f95 i]::before,
+#app-mount [class^=markup] pre code[class~=fortran i]::before {
+    content: "```f95\a";
+}
+
+#app-mount [class^=markup] pre code[class~=fsharp i]::before,
+#app-mount [class^=markup] pre code[class~=fs i]::before {
+    content: "```fs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=gms i]::before,
+#app-mount [class^=markup] pre code[class~=gams i]::before {
+    content: "```gms\a";
+}
+
+#app-mount [class^=markup] pre code[class~=gss i]::before,
+#app-mount [class^=markup] pre code[class~=gauss i]::before {
+    content: "```gss\a";
+}
+
+#app-mount [class^=markup] pre code[class~=nc i]::before,
+#app-mount [class^=markup] pre code[class~=gcode i]::before {
+    content: "```gcode\a";
+}
+
+#app-mount [class^=markup] pre code[class~=feature i]::before,
+#app-mount [class^=markup] pre code[class~=gherkin i]::before {
+    content: "```gherkin\a";
+}
+
+#app-mount [class^=markup] pre code[class~=glsl i]::before {
+    content: "```glsl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=gml i]::before {
+    content: "```gml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=golang i]::before,
+#app-mount [class^=markup] pre code[class~=go i]::before {
+    content: "```go\a";
+}
+
+#app-mount [class^=markup] pre code[class~=golo i]::before {
+    content: "```golo\a";
+}
+
+#app-mount [class^=markup] pre code[class~=gradle i]::before {
+    content: "```gradle\a";
+}
+
+#app-mount [class^=markup] pre code[class~=gql i]::before,
+#app-mount [class^=markup] pre code[class~=graphql i]::before {
+    content: "```gql\a";
+}
+
+#app-mount [class^=markup] pre code[class~=groovy i]::before {
+    content: "```groovy\a";
+}
+
+#app-mount [class^=markup] pre code[class~=haml i]::before {
+    content: "```haml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=htmlbars i]::before,
+#app-mount [class^=markup] pre code[class~=hbs i]::before,
+#app-mount [class^=markup] pre code[class~=handlebars i]::before {
+    content: "```hbs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=hs i]::before,
+#app-mount [class^=markup] pre code[class~=haskell i]::before {
+    content: "```hs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=hx i]::before,
+#app-mount [class^=markup] pre code[class~=haxe i]::before {
+    content: "```hx\a";
+}
+
+#app-mount [class^=markup] pre code[class~=hsp i]::before {
+    content: "```hsp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=https i]::before,
+#app-mount [class^=markup] pre code[class~=http i]::before {
+    content: "```http\a";
+}
+
+#app-mount [class^=markup] pre code[class~=hy i]::before,
+#app-mount [class^=markup] pre code[class~=hylang i]::before {
+    content: "```hy\a";
+}
+
+#app-mount [class^=markup] pre code[class~=i7 i]::before,
+#app-mount [class^=markup] pre code[class~=inform7 i]::before {
+    content: "```i7\a";
+}
+
+#app-mount [class^=markup] pre code[class~=toml i]::before,
+#app-mount [class^=markup] pre code[class~=TOML i]::before {
+    content: "```toml\a";
+}
+
+/* For familiarity */
+#app-mount [class^=markup] pre code[class~=ini i]::before {
+    content: "```ini\a";
+}
+
+#app-mount [class^=markup] pre code[class~=irpf90 i]::before {
+    content: "```irpf90\a";
+}
+
+#app-mount [class^=markup] pre code[class~=isbl i]::before {
+    content: "```isbl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=jsp i]::before,
+#app-mount [class^=markup] pre code[class~=java i]::before {
+    content: "```java\a";
+}
+
+#app-mount [class^=markup] pre code[class~=javascript i]::before,
+#app-mount [class^=markup] pre code[class~=js i]::before {
+    content: "```js\a";
+}
+
+#app-mount [class^=markup] pre code[class~=jsx i]::before {
+    content: "```jsx\a";
+}
+
+#app-mount [class^=markup] pre code[class~=cjs i]::before {
+    content: "```cjs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mjs i]::before {
+    content: "```mjs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=jboss-cli i]::before {
+    content: "```jboss-cli\a";
+}
+
+/* For familiarity */
+#app-mount [class^=markup] pre code[class~=wildfly-cli i]::before {
+    content: "```wildfly-cli\a";
+}
+
+#app-mount [class^=markup] pre code[class~=json i]::before {
+    content: "```json\a";
+}
+
+#app-mount [class^=markup] pre code[class~=julia i]::before {
+    content: "```julia\a";
+}
+
+#app-mount [class^=markup] pre code[class~=jldoctest i]::before,
+#app-mount [class^=markup] pre code[class~=julia-repl i]::before {
+    content: "```jldoctest\a";
+}
+
+#app-mount [class^=markup] pre code[class~=kt i]::before,
+#app-mount [class^=markup] pre code[class~=kts i]::before,
+#app-mount [class^=markup] pre code[class~=kotlin i]::before {
+    content: "```kts\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ls i]::before,
+#app-mount [class^=markup] pre code[class~=lasso i]::before,
+#app-mount [class^=markup] pre code[class~=lassocript i]::before {
+    content: "```ls\a";
+}
+
+#app-mount [class^=markup] pre code[class~=tex i]::before,
+#app-mount [class^=markup] pre code[class~=letex i]::before {
+    content: "```tex\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ldif i]::before {
+    content: "```ldif\a";
+}
+
+#app-mount [class^=markup] pre code[class~=leaf i]::before {
+    content: "```leaf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=less i]::before {
+    content: "```less\a";
+}
+
+#app-mount [class^=markup] pre code[class~=lisp i]::before {
+    content: "```lisp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=livecodeserver i]::before {
+    content: "```livecodeserver\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ls i]::before,
+#app-mount [class^=markup] pre code[class~=livescript i]::before {
+    content: "```ls\a";
+}
+
+#app-mount [class^=markup] pre code[class~=llvm i]::before {
+    content: "```llvm\a";
+}
+
+#app-mount [class^=markup] pre code[class~=lsl i]::before {
+    content: "```lsl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=lua i]::before {
+    content: "```lua\a";
+}
+
+#app-mount [class^=markup] pre code[class~=make i]::before,
+#app-mount [class^=markup] pre code[class~=mak i]::before,
+#app-mount [class^=markup] pre code[class~=mk i]::before,
+#app-mount [class^=markup] pre code[class~=makefile i]::before {
+    content: "```make\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mkd i]::before,
+#app-mount [class^=markup] pre code[class~=mkdown i]::before,
+#app-mount [class^=markup] pre code[class~=markdown i]::before,
+#app-mount [class^=markup] pre code[class~=md i]::before {
+    content: "```md\a";
+}
+
+#app-mount [class^=markup] pre code[class~=wl i]::before,
+#app-mount [class^=markup] pre code[class~=mma i]::before,
+#app-mount [class^=markup] pre code[class~=mathematica i]::before {
+    content: "```mma\a";
+}
+
+#app-mount [class^=markup] pre code[class~=matlab i]::before {
+    content: "```matlab\a";
+}
+
+#app-mount [class^=markup] pre code[class~=maxima i]::before {
+    content: "```maxima\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mel i]::before {
+    content: "```mel\a";
+}
+
+#app-mount [class^=markup] pre code[class~=moo i]::before,
+#app-mount [class^=markup] pre code[class~=m i]::before,
+#app-mount [class^=markup] pre code[class~=mercury i]::before {
+    content: "```mercury\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mips i]::before,
+#app-mount [class^=markup] pre code[class~=mipsasm i]::before {
+    content: "```mipsasm\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mizar i]::before {
+    content: "```mizar\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mojolicious i]::before {
+    content: "```mojolicious\a";
+}
+
+#app-mount [class^=markup] pre code[class~=monkey i]::before {
+    content: "```monkey\a";
+}
+
+#app-mount [class^=markup] pre code[class~=moon i]::before,
+#app-mount [class^=markup] pre code[class~=moonscript i]::before {
+    content: "```moon\a";
+}
+
+#app-mount [class^=markup] pre code[class~=n1ql i]::before {
+    content: "```n1ql\a";
+}
+
+#app-mount [class^=markup] pre code[class~=nestedtext i]::before,
+#app-mount [class^=markup] pre code[class~=nt i]::before {
+    content: "```nt\a";
+}
+
+#app-mount [class^=markup] pre code[class~=nginxconf i]::before,
+#app-mount [class^=markup] pre code[class~=nginx i]::before {
+    content: "```ngnix\a";
+}
+
+#app-mount [class^=markup] pre code[class~=nim i]::before {
+    content: "```nim\a";
+}
+
+#app-mount [class^=markup] pre code[class~=nixos i]::before,
+#app-mount [class^=markup] pre code[class~=nix i]::before {
+    content: "```nix\a";
+}
+
+#app-mount [class^=markup] pre code[class~=node-repl i]::before {
+    content: "```node-repl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=nsis i]::before {
+    content: "```nsis\a";
+}
+
+#app-mount [class^=markup] pre code[class~=objective-c++i]::before,
+#app-mount [class^=markup] pre code[class~=obj-c++i]::before,
+#app-mount [class^=markup] pre code[class~=obj-c i]::before,
+#app-mount [class^=markup] pre code[class~=objc i]::before,
+#app-mount [class^=markup] pre code[class~=mm i]::before,
+#app-mount [class^=markup] pre code[class~=objectivec i]::before {
+    content: "```objc\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ml i]::before,
+#app-mount [class^=markup] pre code[class~=ocaml i]::before {
+    content: "```ml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=scad i]::before,
+#app-mount [class^=markup] pre code[class~=openscad i]::before {
+    content: "```scad\a";
+}
+
+#app-mount [class^=markup] pre code[class~=oxygene i]::before {
+    content: "```oxygene\a";
+}
+
+#app-mount [class^=markup] pre code[class~=parser3 i]::before {
+    content: "```parser3\a";
+}
+
+#app-mount [class^=markup] pre code[class~=pm i]::before,
+#app-mount [class^=markup] pre code[class~=pl i]::before,
+#app-mount [class^=markup] pre code[class~=perl i]::before {
+    content: "```perl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=pf i]::before {
+    content: "```pf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=postgresql i]::before,
+#app-mount [class^=markup] pre code[class~=postgres i]::before,
+#app-mount [class^=markup] pre code[class~=pgsql i]::before {
+    content: "```pgsql\a";
+}
+
+#app-mount [class^=markup] pre code[class~=php i]::before {
+    content: "```toml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=php-template i]::before {
+    content: "```php-template\a";
+}
+
+#app-mount [class^=markup] pre code[class~=pony i]::before {
+    content: "```pony\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ps1 i]::before,
+#app-mount [class^=markup] pre code[class~=ps i]::before,
+#app-mount [class^=markup] pre code[class~=pwsh i]::before,
+#app-mount [class^=markup] pre code[class~=powershell i]::before {
+    content: "```ps1\a";
+}
+
+#app-mount [class^=markup] pre code[class~=pde i]::before,
+#app-mount [class^=markup] pre code[class~=processing i]::before {
+    content: "```pde\a";
+}
+
+#app-mount [class^=markup] pre code[class~=profile i]::before {
+    content: "```profile\a";
+}
+
+#app-mount [class^=markup] pre code[class~=prolog i]::before {
+    content: "```prolog\a";
+}
+
+#app-mount [class^=markup] pre code[class~=properties i]::before {
+    content: "```properties\a";
+}
+
+#app-mount [class^=markup] pre code[class~=protobuf i]::before {
+    content: "```protobuf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=puppet i]::before,
+#app-mount [class^=markup] pre code[class~=pp i]::before {
+    content: "```pp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=pbi i]::before,
+#app-mount [class^=markup] pre code[class~=pb i]::before,
+#app-mount [class^=markup] pre code[class~=purebasic i]::before {
+    content: "```pb\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ipython i]::before,
+#app-mount [class^=markup] pre code[class~=gyp i]::before,
+#app-mount [class^=markup] pre code[class~=py i]::before,
+#app-mount [class^=markup] pre code[class~=python i]::before {
+    content: "```py\a";
+}
+
+#app-mount [class^=markup] pre code[class~=python-repl i]::before,
+#app-mount [class^=markup] pre code[class~=pycn i]::before {
+    content: "```pycn\a";
+}
+
+#app-mount [class^=markup] pre code[class~=kdb i]::before,
+#app-mount [class^=markup] pre code[class~=k i]::before,
+#app-mount [class^=markup] pre code[class~=q i]::before {
+    content: "```q\a";
+}
+
+#app-mount [class^=markup] pre code[class~=qt i]::before,
+#app-mount [class^=markup] pre code[class~=qml i]::before {
+    content: "```qt\a";
+}
+
+#app-mount [class^=markup] pre code[class~=r i]::before {
+    content: "```tr\a";
+}
+
+#app-mount [class^=markup] pre code[class~=re i]::before,
+#app-mount [class^=markup] pre code[class~=reasonml i]::before {
+    content: "```re\a";
+}
+
+#app-mount [class^=markup] pre code[class~=rib i]::before {
+    content: "```rib\a";
+}
+
+#app-mount [class^=markup] pre code[class~=instances i]::before,
+#app-mount [class^=markup] pre code[class~=graph i]::before,
+#app-mount [class^=markup] pre code[class~=roboconf i]::before {
+    content: "```roboocnf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=mikrotik i]::before,
+#app-mount [class^=markup] pre code[class~=routeros i]::before {
+    content: "```routeros\a";
+}
+
+#app-mount [class^=markup] pre code[class~=rsl i]::before {
+    content: "```rsl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=irb i]::before,
+#app-mount [class^=markup] pre code[class~=thor i]::before,
+#app-mount [class^=markup] pre code[class~=podspec i]::before,
+#app-mount [class^=markup] pre code[class~=gemspec i]::before,
+#app-mount [class^=markup] pre code[class~=rb i]::before,
+#app-mount [class^=markup] pre code[class~=ruby i]::before {
+    content: "```ruby\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ruleslanguage i]::before {
+    content: "```ruleslanguage\a";
+}
+
+#app-mount [class^=markup] pre code[class~=rs i]::before,
+#app-mount [class^=markup] pre code[class~=rust i]::before {
+    content: "```rust\a";
+}
+
+#app-mount [class^=markup] pre code[class~=sas i]::before {
+    content: "```sas\a";
+}
+
+#app-mount [class^=markup] pre code[class~=scala i]::before {
+    content: "```scala\a";
+}
+
+#app-mount [class^=markup] pre code[class~=scm i]::before,
+#app-mount [class^=markup] pre code[class~=scheme i]::before {
+    content: "```scheme\a";
+}
+
+#app-mount [class^=markup] pre code[class~=sci i]::before,
+#app-mount [class^=markup] pre code[class~=scilab i]::before {
+    content: "```sci\a";
+}
+
+#app-mount [class^=markup] pre code[class~=sass i]::before,
+#app-mount [class^=markup] pre code[class~=scss i]::before {
+    content: "```scss\a";
+}
+
+#app-mount [class^=markup] pre code[class~=shell i]::before,
+#app-mount [class^=markup] pre code[class~=console i]::before,
+#app-mount [class^=markup] pre code[class~=shellsession i]::before {
+    content: "```shellsession\a";
+}
+
+#app-mount [class^=markup] pre code[class~=smali i]::before {
+    content: "```smali\a";
+}
+
+#app-mount [class^=markup] pre code[class~=st i]::before,
+#app-mount [class^=markup] pre code[class~=smalltalk i]::before {
+    content: "```st\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ml i]::before,
+#app-mount [class^=markup] pre code[class~=sml i]::before {
+    content: "```ml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=sqf i]::before {
+    content: "```sqf\a";
+}
+
+#app-mount [class^=markup] pre code[class~=sql i]::before {
+    content: "```sql\a";
+}
+
+#app-mount [class^=markup] pre code[class~=stanfuncs i]::before,
+#app-mount [class^=markup] pre code[class~=stan i]::before {
+    content: "```stan\a";
+}
+
+#app-mount [class^=markup] pre code[class~=ado i]::before,
+#app-mount [class^=markup] pre code[class~=do i]::before,
+#app-mount [class^=markup] pre code[class~=stata i]::before {
+    content: "```stata\a";
+}
+
+#app-mount [class^=markup] pre code[class~=stp i]::before,
+#app-mount [class^=markup] pre code[class~=step i]::before,
+#app-mount [class^=markup] pre code[class~=p21 i]::before,
+#app-mount [class^=markup] pre code[class~=step21 i]::before {
+    content: "```step21\a";
+}
+
+#app-mount [class^=markup] pre code[class~=styl i]::before,
+#app-mount [class^=markup] pre code[class~=stylus i]::before {
+    content: "```stylus\a";
+}
+
+#app-mount [class^=markup] pre code[class~=subunit i]::before {
+    content: "```subunit\a";
+}
+
+#app-mount [class^=markup] pre code[class~=swift i]::before {
+    content: "```swift\a";
+}
+
+#app-mount [class^=markup] pre code[class~=taggerscript i]::before {
+    content: "```taggerscript\a";
+}
+
+#app-mount [class^=markup] pre code[class~=tap i]::before {
+    content: "```tap\a";
+}
+
+#app-mount [class^=markup] pre code[class~=tk i]::before,
+#app-mount [class^=markup] pre code[class~=tcl i]::before {
+    content: "```tcl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=thrift i]::before {
+    content: "```thrift\a";
+}
+
+#app-mount [class^=markup] pre code[class~=tp i]::before {
+    content: "```tp\a";
+}
+
+#app-mount [class^=markup] pre code[class~=craftcms i]::before,
+#app-mount [class^=markup] pre code[class~=twig i]::before {
+    content: "```twig\a";
+}
+
+#app-mount [class^=markup] pre code[class~=tsx i]::before,
+#app-mount [class^=markup] pre code[class~=ts i]::before,
+#app-mount [class^=markup] pre code[class~=typescript i]::before {
+    content: "```ts\a";
+}
+
+#app-mount [class^=markup] pre code[class~=vala i]::before {
+    content: "```vala\a";
+}
+
+#app-mount [class^=markup] pre code[class~=vb i]::before,
+#app-mount [class^=markup] pre code[class~=vbnet i]::before {
+    content: "```vbnet\a";
+}
+
+#app-mount [class^=markup] pre code[class~=visualbasic i]::before,
+#app-mount [class^=markup] pre code[class~=vbscript i]::before,
+#app-mount [class^=markup] pre code[class~=vbs i]::before {
+    content: "```vbs\a";
+}
+
+#app-mount [class^=markup] pre code[class~=vbscript-html i]::before {
+    content: "```vbscript-html\a";
+}
+
+#app-mount [class^=markup] pre code[class~=svh i]::before,
+#app-mount [class^=markup] pre code[class~=sv i]::before,
+#app-mount [class^=markup] pre code[class~=v i]::before,
+#app-mount [class^=markup] pre code[class~=verilog i]::before {
+    content: "```v\a";
+}
+
+#app-mount [class^=markup] pre code[class~=vhdl i]::before {
+    content: "```vhdl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=vim i]::before {
+    content: "```vim\a";
+}
+
+#app-mount [class^=markup] pre code[class~=wasm i]::before {
+    content: "```wasm\a";
+}
+
+#app-mount [class^=markup] pre code[class~=wren i]::before {
+    content: "```wrem\a";
+}
+
+#app-mount [class^=markup] pre code[class~=x86asm i]::before {
+    content: "```toml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=tao i]::before,
+#app-mount [class^=markup] pre code[class~=xl i]::before {
+    content: "```xl\a";
+}
+
+#app-mount [class^=markup] pre code[class~=plist i]::before,
+#app-mount [class^=markup] pre code[class~=xsl i]::before,
+#app-mount [class^=markup] pre code[class~=xjb i]::before,
+#app-mount [class^=markup] pre code[class~=atom i]::before,
+#app-mount [class^=markup] pre code[class~=rss i]::before,
+#app-mount [class^=markup] pre code[class~=xml i]::before {
+    content: "```xml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=html i]::before {
+    content: "```html\a";
+}
+
+/* For familiarity */
+#app-mount [class^=markup] pre code[class~=xhtml i]::before {
+    content: "```xhtml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=svg i]::before {
+    content: "```svg\a";
+}
+
+#app-mount [class^=markup] pre code[class~=xq i]::before,
+#app-mount [class^=markup] pre code[class~=xpath i]::before,
+#app-mount [class^=markup] pre code[class~=xquery i]::before {
+    content: "```xq\a";
+}
+
+#app-mount [class^=markup] pre code[class~=yml i]::before,
+#app-mount [class^=markup] pre code[class~=yaml i]::before {
+    content: "```yaml\a";
+}
+
+#app-mount [class^=markup] pre code[class~=zephir i]::before,
+#app-mount [class^=markup] pre code[class~=zep i]::before {
+    content: "```zephir\a";
+}
+
+/* Not listed on highlight.js */
+#app-mount [class^=markup] pre code[class~=ansi i]::before {
+    content: "```ansi\a";
+}
+
+#app-mount [class^=markup] [class^=timestamp]:before,
+#app-mount [class^=userInfoText] [class^=timestamp]:before {
+    content: "<t:";
+    display: inline;
+}
+
+#app-mount [class^=markup] [class^=timestamp]:after,
+#app-mount [class^=userInfoText] [class^=timestamp]:after {
+    content: ">";
+    display: inline;
+}
+
+#app-mount [class^=markup] hr,
+#app-mount [class^=userInfoText] hr {
+    position: relative;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+#app-mount [class^=markup] hr:after,
+#app-mount [class^=userInfoText] hr:after {
+    content: "----------------------------------------------------------------------------------------------------";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#app-mount [class^=message] [class^=embed]:not([class^=attachmentContentItem]) {
+    display: none;
+}
